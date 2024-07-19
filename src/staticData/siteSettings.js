@@ -1,4 +1,4 @@
-import logo from "@/public/assets/img/site-logo.svg";
+import logo from "@/public/assets/img/site-logo.png";
 import { IoHomeOutline } from "react-icons/io5";
 import { CiUser } from "react-icons/ci";
 import { IoBriefcaseOutline } from "react-icons/io5";
@@ -65,30 +65,30 @@ export const siteSettings = {
       Icon: <FaRegFileAlt />,
       notVisibleRoutes: [],
     },
-    {
-      id: 6,
-      title: "Portfolio",
-      selector: "#portfolio",
-      url: "/",
-      Icon: <MdFormatListBulleted />,
-      notVisibleRoutes: [],
-    },
-    {
-      id: 7,
-      title: "Blog",
-      selector: "#blog",
-      url: "/",
-      Icon: <LiaBlogSolid />,
-      notVisibleRoutes: [],
-    },
-    {
-      id: 8,
-      title: "Testimonial",
-      selector: "#testimonial",
-      url: "/",
-      Icon: <BiCommentDetail />,
-      notVisibleRoutes: [],
-    },
+    // {
+    //   id: 6,
+    //   title: "Portfolio",
+    //   selector: "#portfolio",
+    //   url: "/",
+    //   Icon: <MdFormatListBulleted />,
+    //   notVisibleRoutes: [],
+    // },
+    // {
+    //   id: 7,
+    //   title: "Blog",
+    //   selector: "#blog",
+    //   url: "/",
+    //   Icon: <LiaBlogSolid />,
+    //   notVisibleRoutes: [],
+    // },
+    // {
+    //   id: 8,
+    //   title: "Testimonial",
+    //   selector: "#testimonial",
+    //   url: "/",
+    //   Icon: <BiCommentDetail />,
+    //   notVisibleRoutes: [],
+    // },
     {
       id: 9,
       title: "Contact",
@@ -104,28 +104,28 @@ export const siteSettings = {
       name: "Facebook",
       tooltip: "Share with Facebook",
       Icon: <FaFacebook />,
-      url: "#",
+      url: "https://www.facebook.com/joselucas.santos.1023/",
     },
     {
       id: 2,
       name: "Linkedin",
       tooltip: "Share with Linkedin",
       Icon: <FaLinkedin />,
-      url: "#",
+      url: "https://www.linkedin.com/in/dev-lucas-santos/",
     },
     {
       id: 3,
       name: "X",
       tooltip: "Share with X",
       Icon: <FaTwitter />,
-      url: "#",
+      url: "https://x.com/Lucassantos0988",
     },
     {
       id: 4,
       name: "Instagram",
       tooltip: "Share with Instagram",
       Icon: <FaInstagram />,
-      url: "#",
+      url: "https://www.instagram.com/joselucas_dev/",
     },
   ],
   preloader: {

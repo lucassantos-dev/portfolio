@@ -6,6 +6,7 @@ import Input from "../ui/fields/Input";
 import Textarea from "../ui/fields/TextArea";
 import SectionHeading from "../shared/SectionHeading";
 import ContactInfo from "./ContactInfo";
+import emailjs from 'emailjs-com';
 
 const ContactMe = () => {
   const [formValues, setFormValues] = useState({
@@ -30,7 +31,23 @@ const ContactMe = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("formValues", formValues);
+    emailjs.send(
+      'service_qus9gbu',
+      'template_lyq7rmd',   
+      {
+        from_name: formValues.fullName,
+        to_name: 'Lucas',
+        message: formValues.message,
+        email_contact: formValues.email,
+      },
+      '-K0MYm-FYXjMhsE5V'
+    ).then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
+      reset();
+    }).catch((error) => {
+      console.log('FAILED...', error);
+    });
+
 
     // reset after form submit
     reset();
@@ -91,7 +108,7 @@ const ContactMe = () => {
         </div>
         <iframe
           className="w-full overflow-hidden border-10 border-platinum dark:border-greyBlack embed-map h-80 2xl:h-96 rounded-2xl"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25908.703277839155!2d-74.18208878159237!3d40.640176526919696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1699271377092!5m2!1sen!2sbd"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.8266293287137!2d-39.32244080812781!3d-7.212984327229356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7bdf2e9c4f1a5f1%3A0x4bca35a6c37caa5b!2sS%C3%ADtio%20Riach%C3%A3o%2C%20Juazeiro%20do%20Norte%20-%20CE%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1699271377092!5m2!1spt-BR!2sus" 
           aria-label="Contact Map"
         />
       </div>

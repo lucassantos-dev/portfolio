@@ -362,7 +362,7 @@ export const skills = {
     heading: "My",
     coloredHeading: "Advantages",
     description:
-      "I design products that are more than pretty. I make them shippable and usable, ttempor non mollit dolor et do aute",
+      "Creative problem solver, experienced in Java and Python, always learning, great team player, client-focused.",
   },
   skillsData: [
     {
@@ -387,7 +387,7 @@ export const skills = {
     },
     {
       image: DockerImage?.src,
-      percent: 95,
+      percent: 70,
       name: "Docker",
     },
     {
@@ -406,30 +406,17 @@ export const resume = {
     heading: "Work",
     coloredHeading: "Experience",
     description:
-      "I design products that are more than pretty. I make them shippable and usable, ttempor non mollit dolor et do aute",
+      "In my professional journey, I've had the opportunity to work on diverse projects that challenged and enhanced my skills. Below are some of the key roles and responsibilities I've undertaken.",
   },
   resumeData: [
     {
-      platform: "Envato Market",
-      duration: "Mar, 2022 - Current",
-      position: "Lead UX Designer",
+      platform: "Tax/Redux Contabilidade",
+      duration: "Maio, 2021 - Abril , 2024",
+      position: "Full-Stack Developer",
       description:
-        "Owing to advancements in product other designer technologies aute voluptate.",
+        "Full Stack Developer responsible for leading accounting process automation projects, using technologies such as Java, Python, Django and Node.js to increase the efficiency and accuracy of daily operations.",
     },
-    {
-      platform: "Google",
-      duration: "2018 - 2022",
-      position: "UX Designer",
-      description:
-        "Owing to advancements in product other designer technologies aute voluptate.",
-    },
-    {
-      platform: "Apple",
-      duration: "2014-2018",
-      position: "Human Interface Designer",
-      description:
-        "Owing to advancements in product other designer technologies aute voluptate.",
-    },
+    
   ],
 };
 
@@ -440,30 +427,17 @@ export const educations = {
     heading: "My",
     coloredHeading: "Education",
     description:
-      "I design products that are more than pretty. I make them shippable and usable, ttempor non mollit dolor et do aute",
+      "My academic background has provided me with a strong foundation in computer science and software development. Here is an overview of my educational achievements.",
   },
   educationsData: [
     {
-      institution: "Oxford University",
-      duration: "2016-2018",
-      degree: "Diploma in Computer",
+      institution: "Universidade Estácio de Sá",
+      duration: "2020-2024",
+      degree: "Diploma in Computer Science",
       description:
-        "Owing to advancements in product other designer technologies aute voluptate.",
+        "Degree in Computer Science with a focus on software and systems development, acquiring a solid grounding in programming and software engineering.",
     },
-    {
-      institution: "Google",
-      duration: "2018 - 2022",
-      degree: "BSc in Engineering",
-      description:
-        "Owing to advancements in product other designer technologies aute voluptate.",
-    },
-    {
-      institution: "Oxford University",
-      duration: "2014-2018",
-      degree: "Php Development",
-      description:
-        "Owing to advancements in product other designer technologies aute voluptate.",
-    },
+    
   ],
 };
 
@@ -926,25 +900,25 @@ export const contactInfo = {
     heading: "Contact",
     coloredHeading: "Me.",
     description:
-      "I design products that are more than pretty. I make them shippable and usable, ttempor non mollit dolor et do aute",
+      "Feel free to reach out to me through any of the following channels. I'm always open to new opportunities and collaborations.",
   },
   contactInfoData: [
     {
       id: 1,
       field: "Location",
-      data: "Melbourne Street. No 20",
+      data: "Juazeiro do norte - CE",
       Icon: <LocationIcon />,
     },
     {
       id: 2,
       field: "E-mail",
-      data: "smith@gmail.com",
+      data: "jl.lucassantos098@gmail.com",
       Icon: <EmailIcon />,
     },
     {
       id: 3,
       field: "Phone",
-      data: "+976 34 99 99",
+      data: "+55 88 9 9930-6514",
       Icon: <PhoneIcon />,
     },
   ],
