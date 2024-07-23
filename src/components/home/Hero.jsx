@@ -45,7 +45,7 @@ const Hero = () => {
               height={200}
               alt="Hero Image - Light Mode"
               priority
-              className="dark:hidden"
+              className="dark:hidden rounded-md"
             />
 
             <Image
@@ -54,7 +54,7 @@ const Hero = () => {
               height={200}
               alt="Hero Image - Dark Mode"
               // priority
-              className="hidden dark:block"
+              className="hidden dark:block rounded-md"
             />
           </div>
         </div>
