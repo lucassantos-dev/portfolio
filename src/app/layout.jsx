@@ -16,6 +16,8 @@ import BackToTop from "@/src/components/shared/BackToTop";
 import ModeSwitcher from "@/src/components/shared/ModeSwitcher";
 import { ThemeProvider } from "../context/theme-provider";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 const poppins = Poppins({
   weight: ["200", "300", "400", "500", "600", "700"],
   style: ["normal", "italic"],
@@ -44,6 +46,7 @@ export default function RootLayout({ children }) {
           </main>
         </ThemeProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
