@@ -220,7 +220,7 @@ export const technologies = [
 export const userDetails = [
   {
     field: "Phone",
-    value: "+55 (88) 9 99306514",
+    value: "+55 (88) 9 81808503",
   },
   {
     field: "Linkedin",
